@@ -1,0 +1,127 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>d6bcfce5-1063-4315-8a21-7fbf0f8f22fc</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <DockerComposeProjectPath>..\docker-compose.dcproj</DockerComposeProjectPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="frontend\**" />
+    <Content Remove="frontend\**" />
+    <EmbeddedResource Remove="frontend\**" />
+    <None Remove="frontend\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="frontend\.next\build-manifest.json" />
+    <Content Include="frontend\.next\react-loadable-manifest.json" />
+    <Content Include="frontend\.next\server\pages-manifest.json" />
+    <Content Include="frontend\package-lock.json" />
+    <Content Include="frontend\package.json" />
+    <Content Include="frontend\public\favicon.ico" />
+    <Content Include="frontend\styles\globals.css" />
+    <Content Include="frontend\styles\Home.module.css" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="frontend\.dockerignore" />
+    <None Include="frontend\.gitignore" />
+    <None Include="frontend\.next\cache\images\FdhZTIuceoBduZiUWx-CV25x7-5YbIOeum9zZDzHfl0=\1620368709967.wPvODNXNDTx7iJgazQaNE7lhRgu5TTxLpKDsXCgFH9E=.svg" />
+    <None Include="frontend\.next\cache\webpack\client-development\0.pack" />
+    <None Include="frontend\.next\cache\webpack\client-development\1.pack" />
+    <None Include="frontend\.next\cache\webpack\client-development\10.pack" />
+    <None Include="frontend\.next\cache\webpack\client-development\11.pack" />
+    <None Include="frontend\.next\cache\webpack\client-development\12.pack" />
+    <None Include="frontend\.next\cache\webpack\client-development\13.pack" />
+    <None Include="frontend\.next\cache\webpack\client-development\14.pack" />
+    <None Include="frontend\.next\cache\webpack\client-development\15.pack" />
+    <None Include="frontend\.next\cache\webpack\client-development\16.pack" />
+    <None Include="frontend\.next\cache\webpack\client-development\17.pack" />
+    <None Include="frontend\.next\cache\webpack\client-development\18.pack" />
+    <None Include="frontend\.next\cache\webpack\client-development\19.pack" />
+    <None Include="frontend\.next\cache\webpack\client-development\2.pack" />
+    <None Include="frontend\.next\cache\webpack\client-development\20.pack" />
+    <None Include="frontend\.next\cache\webpack\client-development\21.pack" />
+    <None Include="frontend\.next\cache\webpack\client-development\22.pack" />
+    <None Include="frontend\.next\cache\webpack\client-development\23.pack" />
+    <None Include="frontend\.next\cache\webpack\client-development\24.pack" />
+    <None Include="frontend\.next\cache\webpack\client-development\25.pack" />
+    <None Include="frontend\.next\cache\webpack\client-development\3.pack" />
+    <None Include="frontend\.next\cache\webpack\client-development\4.pack" />
+    <None Include="frontend\.next\cache\webpack\client-development\5.pack" />
+    <None Include="frontend\.next\cache\webpack\client-development\6.pack" />
+    <None Include="frontend\.next\cache\webpack\client-development\7.pack" />
+    <None Include="frontend\.next\cache\webpack\client-development\8.pack" />
+    <None Include="frontend\.next\cache\webpack\client-development\9.pack" />
+    <None Include="frontend\.next\cache\webpack\client-development\index.pack" />
+    <None Include="frontend\.next\cache\webpack\client-development\index.pack.old" />
+    <None Include="frontend\.next\cache\webpack\server-development\0.pack" />
+    <None Include="frontend\.next\cache\webpack\server-development\1.pack" />
+    <None Include="frontend\.next\cache\webpack\server-development\10.pack" />
+    <None Include="frontend\.next\cache\webpack\server-development\11.pack" />
+    <None Include="frontend\.next\cache\webpack\server-development\12.pack" />
+    <None Include="frontend\.next\cache\webpack\server-development\13.pack" />
+    <None Include="frontend\.next\cache\webpack\server-development\14.pack" />
+    <None Include="frontend\.next\cache\webpack\server-development\2.pack" />
+    <None Include="frontend\.next\cache\webpack\server-development\3.pack" />
+    <None Include="frontend\.next\cache\webpack\server-development\4.pack" />
+    <None Include="frontend\.next\cache\webpack\server-development\5.pack" />
+    <None Include="frontend\.next\cache\webpack\server-development\6.pack" />
+    <None Include="frontend\.next\cache\webpack\server-development\7.pack" />
+    <None Include="frontend\.next\cache\webpack\server-development\8.pack" />
+    <None Include="frontend\.next\cache\webpack\server-development\9.pack" />
+    <None Include="frontend\.next\cache\webpack\server-development\index.pack" />
+    <None Include="frontend\.next\cache\webpack\server-development\index.pack.old" />
+    <None Include="frontend\.next\server\pages\_app.js" />
+    <None Include="frontend\.next\server\pages\_document.js" />
+    <None Include="frontend\.next\server\pages\_error.js" />
+    <None Include="frontend\.next\server\webpack-runtime.js" />
+    <None Include="frontend\.next\static\chunks\amp.js" />
+    <None Include="frontend\.next\static\chunks\main.js" />
+    <None Include="frontend\.next\static\chunks\node_modules_next_dist_client_dev_noop_js.js" />
+    <None Include="frontend\.next\static\chunks\pages\_app.js" />
+    <None Include="frontend\.next\static\chunks\pages\_error.js" />
+    <None Include="frontend\.next\static\chunks\polyfills.js" />
+    <None Include="frontend\.next\static\chunks\react-refresh.js" />
+    <None Include="frontend\.next\static\chunks\webpack.js" />
+    <None Include="frontend\.next\static\development\_buildManifest.js" />
+    <None Include="frontend\.next\static\development\_ssgManifest.js" />
+    <None Include="frontend\components\add\index.jsx" />
+    <None Include="frontend\components\detail\index.jsx" />
+    <None Include="frontend\components\home\index.jsx" />
+    <None Include="frontend\Dockerfile" />
+    <None Include="frontend\layout\GuestLayout.jsx" />
+    <None Include="frontend\layout\Layout.jsx" />
+    <None Include="frontend\pages\add.js" />
+    <None Include="frontend\pages\index.js" />
+    <None Include="frontend\pages\product\[id].jsx" />
+    <None Include="frontend\pages\_app.js" />
+    <None Include="frontend\pages\_document.jsx" />
+    <None Include="frontend\public\vercel.svg" />
+    <None Include="frontend\README.md" />
+    <None Include="frontend\theme\index.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.1" />
+    <PackageReference Include="Microsoft.AspNet.WebApi.Core" Version="5.2.7" />
+    <PackageReference Include="Microsoft.AspNetCore.Cors" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Abstractions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.5">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.5">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.10.13" />
+  </ItemGroup>
+
+
+</Project>
